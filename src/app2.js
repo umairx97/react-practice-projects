@@ -1,12 +1,11 @@
 import React, {Component} from 'react'; 
 
 class App2 extends Component {
-	
-	
 	state = { 
 		name: '', 
 		fname: ''
 	}
+	
 
 	whenChange = (event) => { 
 		const {name, value} = event.target
