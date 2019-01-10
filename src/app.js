@@ -3,27 +3,27 @@ import ListContacts from './ListContact';
 
 const contacts = [
     {
-      "id": "karen",
-      "name": "Karen Isgrigg",
-      "handle": "karen_isgrigg",
-      "avatarURL": "http://localhost:5001/karen.jpg"
+      "id": "Michael",
+      "name": "Michael Isgrigg",
+      "handle": "@Michael_isgrigg",
+      "avatarURL": "http://localhost:5001/michael.jpg"
     },
     {
-      "id": "richard",
-      "name": "Richard Kalehoff",
-      "handle": "richardkalehoff",
-      "avatarURL": "http://localhost:5001/richard.jpg"
+      "id": "ryan",
+      "name": "ryan Kalehoff",
+      "handle": "@ryan_kalehoff",
+      "avatarURL": "http://localhost:5001/ryan.jpg"
     },
     {
       "id": "tyler",
       "name": "Tyler McGinnis",
-      "handle": "tylermcginnis",
+      "handle": "@tylermcginnis",
       "avatarURL": "http://localhost:5001/tyler.jpg"
     }
    ];
 
 
-   
+
 class App extends React.Component { 
     render() { 
       
