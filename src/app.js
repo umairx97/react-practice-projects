@@ -35,6 +35,8 @@ class App extends React.Component {
 
         ]
     }
+    
+    
     removeContact = (contacts) => {
         this.setState((currentState) => ({
             contacts: currentState.contacts.filter((c) => {
