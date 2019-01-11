@@ -186,3 +186,12 @@ html {
     cursor: pointer;
     outline: none;
   }
+
+  .app-card{ 
+    background-color: rgb(56, 206, 206);
+  }
+
+  .app-card p { 
+    line-height: 0.5;
+  }
+
