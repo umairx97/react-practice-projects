@@ -2,28 +2,32 @@
     "posts": [
       {
         "id": 1,
+        "author": "Umair Ahmed Bajwa",
+        "handle": "@umairx97",
+        "date": "02/04/2018",
         "title": "This is the first post"
         
       },
       {
         "id": 2,
+        "author": "Syed Shahbaz Hussain",
+        "handle": "@shahbazhussain",
+        "date": "02/04/2018",
         "title": "This is the second post"
       },
       {
         "id": 3,
+        "author": "Asad Ikhlas",
+        "handle": "@asadikhlas",
+        "date": "02/04/2018",
         "title": "This is the third post"
       },
       {
         "id": 4,
+        "author": "Dr.Muniba Memon",
+        "handle": "@munmemon",
+        "date": "02/04/2018",
         "title": "This is the fourth post"
-      },
-      {
-        "id": 5,
-        "title": "This is the fifth post"
-      },
-      {
-        "id": 6,
-        "title": "This is a sixth post"
       }
     ]
 }
