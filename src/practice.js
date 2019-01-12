@@ -1,21 +1,29 @@
-import React from 'react'
+import React, {Component} from 'react'
+import axios from 'axios';
 
-// const Practice = () => {
-//     return( 
-//         <div>
-//             hello
-//         </div>
-//     )
-// }
+class Practice extends Component {
 
-class Practice extends React.Component {
-    render() { 
-        return ( 
-            <div>
-                hello
-            </div>
+    state = {
+        persons: [],
+      }
+    
+      componentDidMount() {
+        axios.get(`http://localhost:3001/posts`)
+          .then(res => {
+            const persons = res.data;
+            this.setState({ persons });
+          })
+
+      }
+    
+      render() {
+        return (
+          <ul>
+
+            { this.state.persons.map(person => <li key = {person.id}>{person.title}</li>)}
+          </ul>
         )
-    }
+      }
 }
 
 export default Practice;
