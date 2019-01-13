@@ -1,21 +1,18 @@
 import React, { Component } from 'react'
 
+let a = 'foo', b = 42, c = {prop: 'abc'}; 
 
 
-const list = [
-    {
-        name: 'Umair',
-        age: 20,
-        position: 'Developer'
-    }
-]
+
 
 class Practice extends Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            list,
+        this.state = { 
+            a, 
+            b, 
+            c,
         }
 
     }
@@ -26,13 +23,7 @@ class Practice extends Component {
 
         return (
             <div>
-                {this.state.list.map((item) => {
-
-                    return <p key = {item.name}>
-                        {item.name} <br/>
-                        {item.age}
-                    </p>
-                })}
+                {this.state.a}
             </div>
         )
     }
