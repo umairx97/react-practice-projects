@@ -1,26 +1,38 @@
 import React, { Component } from 'react'
 
 
-class App2 extends Component {
-    
-    render() { 
 
-        return ( 
-            <div>
-            
-            </div>
-        )
+const list = [
+    {
+        name: 'Umair',
+        age: 20,
+        position: 'Developer'
     }
-}
-
+]
 
 class Practice extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            list,
+        }
+
+    }
+
 
 
     render() {
 
         return (
-            <div> 
+            <div>
+                {this.state.list.map((item) => {
+
+                    return <p key = {item.name}>
+                        {item.name} <br/>
+                        {item.age}
+                    </p>
+                })}
             </div>
         )
     }
