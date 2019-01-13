@@ -30,8 +30,18 @@ class Practice extends Component {
             </span>
             <br />
             <span>Author: {item.author}</span> <br />
-            <span>Comments: {item.num_comments}</span><br/>
+            <span>Comments: {item.num_comments}</span>
+            <br />
             <span>Upvotes: {item.points}</span>
+            <span>
+              {" "}
+              <button
+                onClick={() => this.onDismiss(item.objectID)}
+                type="button"
+              >
+                Dismiss
+              </button>
+            </span>
           </div>
         ))}
       </div>
