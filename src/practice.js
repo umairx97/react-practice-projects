@@ -1,29 +1,28 @@
 import React, { Component } from 'react'
 
-let a = 'foo', b = 42, c = {prop: 'abc'}; 
 
 
+const key = 'abc';
+const user = {
+    [key]: 'Robin'
+}
+
+console.log(key)
+console.log(user)
 
 
 class Practice extends Component {
     constructor(props) {
         super(props);
 
-        this.state = { 
-            a, 
-            b, 
-            c,
-        }
 
     }
-
-
 
     render() {
 
         return (
             <div>
-                {this.state.a}
+                hello
             </div>
         )
     }
