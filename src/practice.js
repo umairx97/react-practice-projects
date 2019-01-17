@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 
-const key = 'name'; const user = { [key]: 'Robin', };
 
 
 class Practice extends Component {
