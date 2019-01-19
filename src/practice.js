@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Route from './routes'; 
-
+import Route from "./routes";
 
 class Practice extends Component {
   constructor(props) {
@@ -9,9 +8,7 @@ class Practice extends Component {
   }
 
   render() {
-    return (
-      <Route/>
-    )
+    return <Route/>;
   }
 }
 
