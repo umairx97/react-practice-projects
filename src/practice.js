@@ -8,7 +8,7 @@ class Practice extends Component {
   }
 
   render() {
-    return <Route/>;
+    return <Route />;
   }
 }
 
