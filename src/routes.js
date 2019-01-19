@@ -8,7 +8,7 @@ const Home = props => {
       <button
         onClick={() =>
           props.history.push({
-            pathname: "/contact-us",
+            pathname: "/contact-us/1234",
             state: { name: "hello" }
           })
         }
