@@ -1,15 +1,12 @@
-import React, { Component } from "react";
-import Route from "./routes";
+import React from "react";
+import * as MUI from "@material-ui/core";
 
-class Practice extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return <Route />;
-  }
-}
+const Practice = () => {
+  return (
+    <div>
+      hello
+    </div>
+  );
+};
 
 export default Practice;
