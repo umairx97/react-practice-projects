@@ -1,4 +1,7 @@
 import { createStore, combineReducers } from "redux";
+import { bindActionCreator } from "redux";
+
+
 
 // Reducer
 function Todo(state = { name: "Umair" }, action) {
@@ -53,7 +56,5 @@ const store = createStore(rootReducer, {});
 store.dispatch({
   type: "ADD_TODO"
 });
-
-console.log(store.getState());
 
 export default store;

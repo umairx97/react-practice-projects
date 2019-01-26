@@ -1,10 +1,24 @@
 import React from "react";
 // import ListContacts from './ListContact';
-import {connect} from 'react-redux'; 
+import { connect } from "react-redux";
+import store from "./basic";
+import { bindActionCreator } from "redux";
 
+function UpdateTodo() {
+  return {
+    type: "ADD_TODO"
+  };
+}
 
 class App extends React.Component {
-  state = {};
+  componentDidMount() {
+    console.log(this.props);
+    this.props.updateTodo();
+  }
+
+  componentWillReceiveProps(nextProps) {
+    console.log("Componentwillrecieveprops", nextProps);
+  }
 
   render() {
     return (
@@ -16,11 +30,18 @@ class App extends React.Component {
   }
 }
 
-function mapStateToProps (state) {
+function mapStateToProps(state) {
   return {
     Todo: state.Todo.text
-  }
+  };
 }
 
-export default connect(mapStateToProps, null)(App); 
-
+function mapDispatchToProps(dispatch) {
+  return {
+    updateTodo: data => dispatch(UpdateTodo(data))
+  };
+}
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
