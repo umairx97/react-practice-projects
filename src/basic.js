@@ -25,7 +25,7 @@ function Todo(state = { name: "Umair" }, action) {
 }
 
 function User(state = { name: "Umair" }, action) {
-  // Checks agains action.type
+  // Checks against action.type
   switch (action.type) {
     case "ADD_TODO":
       return {
