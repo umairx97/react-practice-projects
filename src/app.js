@@ -1,8 +1,6 @@
 import React from "react";
-// import ListContacts from './ListContact';
 import { connect } from "react-redux";
-import store from "./basic";
-import { bindActionCreator } from "redux";
+
 
 function UpdateTodo() {
   return {
