@@ -1,0 +1,15 @@
+.inputContainer { 
+    padding: 10px;
+}
+
+.label { 
+    margin: 10px auto;
+    display: block;
+}
+
+.inputWrapper { 
+    width: 400px; 
+    height: 30px; 
+    margin: 0 auto;
+
+}
